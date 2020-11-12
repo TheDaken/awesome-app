@@ -4,7 +4,8 @@ const express = require('express');
 const app = express();
 
 // listen for requests
-app.listen(3000);
+const port = process.env.PORT || 3000
+app.listen(port);
 
 // register view engine
 app.set('view engine', 'ejs');
@@ -37,6 +38,10 @@ app.get('/about', (req, res) => {
 app.get('/blogs/create', (req, res) => {
   res.render('create', { title: 'Create a new blog' });
 });
+app.get('/novedades', (req, res) => {
+  res.render('novedades', { title: 'novedad' });
+});
+
 
 // 404 page
 app.use((req, res) => {
