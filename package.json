@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "web con express",
   "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js",
-    "dev": "nodemon app.js"
+  "scripts": {"start": "node src/app.js"
   },
   "author": "X",
   "license": "ISC",
@@ -17,4 +14,5 @@
   "devDependencies": {
     "nodemon": "^2.0.6"
   }
+  
 }

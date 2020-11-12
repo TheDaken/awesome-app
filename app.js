@@ -51,3 +51,11 @@ app.get('/novedades', (req, res) => {
 app.use((req, res) => {
   res.status(404).render('404', { title: '404' });
 });
+/*
+
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon app.js"
+  },
+ */
