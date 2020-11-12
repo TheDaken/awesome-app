@@ -2,9 +2,8 @@
   "name": "express-web",
   "version": "1.0.0",
   "description": "web con express",
-  "main": "server.js",
-  "scripts": {"start": "node src/app.js"
-  },
+  "main": "app.js",
+  "scripts": {"start": "node src/app.js"},
   "author": "X",
   "license": "ISC",
   "dependencies": {
