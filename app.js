@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 
 // listen for requests
+
 const port = process.env.PORT || 3000
 app.listen(port);
 
@@ -40,8 +41,11 @@ app.get('/blogs/create', (req, res) => {
 });
 app.get('/novedades', (req, res) => {
   res.render('novedades', { title: 'novedad' });
+}); 
+/* app.get('/canciones', (req, res) => {
+  res.render('canciones');
 });
-
+ */
 
 // 404 page
 app.use((req, res) => {
